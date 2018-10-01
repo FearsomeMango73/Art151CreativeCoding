@@ -7,9 +7,12 @@ file:///C:/Users/Hayley/Documents/Art151/AssignmentTwo/source/index.html
 
 var canvas;
 
-//Begining Sequences and Inputs
+//Begining Sequences 
 var startingLine;
 var intro;
+var finalSaying;
+
+//Inputs
 var nameInput;
 var yesInput;
 var noInput;
@@ -29,7 +32,7 @@ var unwokenOp;
 var score;
 var resetStory; 
 
-//Setting up canvas
+//setting up canvas
 function setup() {
 
 	canvas = createCanvas(windowWidth, windowHeight);
@@ -38,23 +41,46 @@ function setup() {
 	begin();
 }
 
-
 function alarmClock(){
+	//hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
 
-	alarmClockOp = createP("You glance over at the time as the ring continues. Such a device to make such a sound.");
+	alarmClockOp = createP("You glance over at the time as the ring continues. Such a small device to make such a loud sound.");
 }
 
-function clothes(){}
+function clothes(){
+	//hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
+}
 
-function deamon(){}
+function deamon(){
+	//hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
+}
 
-function outside(){}
+function outside(){
+	//hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
 
-function sam(){}
+	windowOp = createP(" You see the birds in start to act weird, stating at you as you look out at them.<br>You observe people rushing to get to work, you chuckle at the thought of a normal life.");
+}
+
+function sam(){
+	//hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
+	
+}
 
 function fleurish(){
-	begin.hide();
-	unwoken.hide();
+
+	// hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
 
 	background(0);
 
@@ -63,58 +89,57 @@ function fleurish(){
 }
 
 function unwoken(){
-	//hiding other scenes
-	fleurish.hide();
-	begin.hide();
+	//hiding all other scenes
+	startingLine.hide();
+	yesInput.hide();
 
 	background(0);
 
-	unwokenOp = createA("#", "Most of Society that has not unlocked the powers of the Fleur.");
+	unwokenOp = createP("Most of Society that has not unlocked the powers of the Fleur.");
 }
 
 // Main Story Functions
+
 function begin(){
+
+	finalSaying.hide();
+	resetStory.hide();
 	//resetting background
+	background(0);
 
 	startingLine = createP(" This is your Story. <br>The lonesome journey you must be prepared for. <br>Are you ready to face it?");
 	createElement("br"); createElement("br");
 
-	//yesInput = createA("#", "Yes.");
-	//noInput = createA("#", "No.");
 	yesInput = createButton("Yes");
-	//createElement("br");
+	createElement("br");
 	//noInput = createButton('No');
 
 	yesInput.mousePressed(startStory);
 	//noInput.mousePressed(endTooQuickly);
-
-	//Name Input Example
-	//nameInput = createInput("Yes or no?");
-	//nameInput.changed(startStory);
-	//nameInput.changed(startStory);
 }
 
 function startStory(){
 	//hiding other scenes
-	//nameInput.hide();
 	startingLine.hide();
 	yesInput.hide();
-	noInput.hide();
+	//nameInput.hide();
+	//noInput.hide();
 
 	//resetting background
 	background(0);
+
 	title.html('And so it begins...');
-	createElement("br");
 	createElement("br");
 	intro = createP("The sound of your alarm clock drags you awake, but you remain with your eyes closed. <br>This moment of peace before the day starts tempts you to stay in bed, but a small voice in the back of your head brings you back to reality. <br> <br>Today is the day you need to keep moving. ");
 	createElement("br");
 	alarmClockBTN = createButton('Alarm Clock');
 	alarmClockBTN.mousePressed(alarmClock);
+
 }
 
 function endTooQuickly(){
 	//hiding other scenes
-	//nameInput.hide();
+	
 	startingLine.hide();
 	intro.hide();
 	yesInput.hide();
@@ -125,7 +150,7 @@ function endTooQuickly(){
 	//resetting background
 	background(0);
 
-	var finalSaying = createP("The darkness has taken you too quickly.<br>		You must prepare yourself to face it.<br>			 Consider starting your story again?");
+	finalSaying = createP("The darkness has taken you too quickly.<br>		You must prepare yourself to face it.<br>			 Consider starting your story again?");
 	createElement("br");
 	resetStory = createA("#", "Your Story isnt over");
 	resetStory.mouseIsPressed(begin);
@@ -135,79 +160,21 @@ function endTooQuickly(){
 function draw(){
 	//resetting background
 	background(0);
-
-	if(mouseIsPressed == true){
-		fleurish();
-	}
 }
 
 function WindowResized(){
 canvas = createCanvas(windowWidth, windowHeight);
 
 }
-
-
 
 /*
-var canvas;
+Commented out Lines of Example code for reference
 
-//screen text
-var intro;
-var title;
-var firstOption;
-var secondOption;
-var userName;
+//nameInput.hide();
+//Name Input Example
+	//nameInput = createInput("Yes or no?");
+	//nameInput.changed(startStory);
+	//nameInput.changed(startStory);
 
-//inputs
-var nameInput;
-
-//animation variables
-
-//boolean
-var firstScreen;
-
-
-function setup(){
-
-canvas = createCanvas(windowWidth, windowHeight);
-canvas.position(0,0);
-canvas.style("z-index", "-1");
-
-beginning();
-}
-
-function beginning(){
-background(0);
-intro = createP("The sound of your alarm clock drags you awake, but you remain with your eyes closed. <br>This moment of peace before the day starts tempts you to stay in bed, but a small voice in the back of your head brings you back to reality. <br> <br>Today is the day you need to keep moving. ");
-createElement("br");
-
-nameInput = createInput("type your name here");
-//createA()
-nameInput.changed(startStory);
-}
-
-function startStory(){
-intro.hide();
-nameInput.hide();
-userName = createElement('h1', nameInput.value());
-title = createElement('h1', "Get home before the sun sets");
-
-firstOption = createP("walk towards the sun");
-secondOption = createP("go home");
-
-//createP("<p style=text-align:center;>Score:" + score);
-}
-
-function draw(){
-background(0);
-
-}
-
-//animation functions
-
-function WindowResized(){
-canvas = createCanvas(windowWidth, windowHeight);
-
-}
-
-*/
+	//yesInput = createA("#", "Yes.");
+	//noInput = createA("#", "No.");
