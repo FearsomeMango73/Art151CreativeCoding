@@ -39,12 +39,16 @@ var endScene; var samImage;
 var noSam = false; var noClothes = false; var noFleurish = false; var noUnwoken = false; var noDaemons = false; 
 var noReturn = false; var noPath = false;
 
+//Error with Implementation
+/*
 function preload(){
-	windowView = loadImage('../images/window');
-	samSmile = loadImage('../images/smile');
-	//endScene = loadImage("../videos/static.gif");
-	//samImage = loadImage("../videos/sam.gif");
+	//windowView = loadImage('../images/window.png');
+	//samSmile = loadImage('../images/smile.jpg');
+	endScene = loadImage("../videos/static.gif");
+	samImage = loadImage("../videos/sam.gif");
 }
+*/
+
 //setting up canvas
 function setup() {
 
@@ -131,7 +135,7 @@ function outside(){
 	background(0);
 
 	windowOp = createP("<br> You see the birds as they start to act weird, staring at you as you look out at them.<br>You observe people rushing to get to work, you chuckle at the thought of a normal life. <br> <br> <br>One person, jogging along reminds you of ...");
-	image(windowView, 0, 0, windowWidth, windowHeight);
+	//image(windowView, 0, 0, windowWidth, windowHeight);
 	samB = createButton("Sam");	
 	samB.mouseClicked(samStory);
 	createElement("br");
@@ -164,8 +168,9 @@ function samStory(){
 
 	//Implementing a video of Sam, but was not being implemented Properly
 	//samSmile.loadPixels();
-	image(samSmile, windowWidth-50, windowHeight, 340, 480);
-	//image(samImage, 25, 25, windowWidth - 50, 50);
+	//image(samSmile, windowWidth-50, windowHeight, 340, 480);
+
+	//image(samImage, windowWidth - 50, windowHeight, 340, 480);
 	
 	samOP =createElement("h1", "Sam...");
 	samAbout = createP(" Their death...they died. It is still fresh in your mind. Their screams for you to run, the tearing of their flesh.<br><br> Their last will, stained in your memory, was for you to keep running until I find them again and to not trust anyone.  <br><br> You supposedly have been lost for some time, but even you cannot remember who you once were... but her smile you could never forget");
@@ -361,10 +366,8 @@ function startStory(){
 	//resetting background
 	background(0);
 
-	beginIntro = createElement("h1", "And so it begins...");
-	createElement("br");
-	intro = createP("The sound of your alarm clock drags you awake, but you remain with your eyes closed. <br>This moment of peace before the day starts tempts you to stay in bed, but a small voice in the back of your head brings you back to reality. <br> <br>Today is the day you need to keep moving. ");
-	createElement("br");
+	beginIntro = createElement("h1", "And so it begins...<br>");
+	intro = createP("The sound of your alarm clock drags you awake, but you remain with your eyes closed. <br>This moment of peace before the day starts tempts you to stay in bed, but a small voice in the back of your head brings you back to reality. <br> <br>Today is the day you need to keep moving.<br> ");
 	alarmClockBTN = createButton('Turn off Alarm Clock'); alarmClockBTN.style('background-color', 225, 35, 20);
 	alarmClockBTN.mouseClicked(alarmClock);
 	
@@ -419,8 +422,7 @@ function endTooQuickly(){
 	background(0);
 
 	quicklyHeading = createElement("h1","Just as quickly it ends, it can begin...");
-	finalSaying = createP("The darkness has taken you too quickly.<br>		You must prepare yourself to face it.<br>			 Consider starting your story again?");
-	createElement("br");
+	finalSaying = createP("The darkness has taken you too quickly.<br>		You must prepare yourself to face it.<br>			 Consider starting your story again?<br>");
 	resetStory = createButton("Your Story isnt over...");
 	resetStory.mouseClicked(beginAlt);
 	createElement("br");
@@ -449,6 +451,8 @@ function onlyTheBeginning(){
 
 	//Implementing a static variable but it was not being loaded properly
 	//loadImage('../videos/static.gif');
+	
+	//image(endScene, 0, 0, windowWidth, windowHeight);
 
 }
 
