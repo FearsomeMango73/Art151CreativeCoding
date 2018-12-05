@@ -1,0 +1,206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"int"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Hayley/Documents/Art151/testingInP5/javascript/index.html",
+		"/C/Users/Hayley/Documents/CS261/lab6.c",
+		"/C/Users/Hayley/Documents/CS261/fib.c",
+		"/C/Users/Hayley/Documents/CS251/Programs/bstex.h",
+		"/C/Users/Hayley/Documents/CS261/labw3_swap.c",
+		"/C/Users/Hayley/Documents/CS2612018/Solving Bomb.txt",
+		"/C/Users/Hayley/Documents/CS2612018/phase3.txt",
+		"/C/Users/Hayley/Documents/CS251/Programs/project1/List.h",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/obvious.cc",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/blocking.cc",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/histogram.cc",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/sort.cc",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/inst_compact.h",
+		"/C/Users/Hayley/Documents/CS2612018/attacklab/phase3.s",
+		"/C/Users/Hayley/Documents/CS2612018/phase2.s",
+		"/C/Users/Hayley/Documents/CS2612018/phase4.txt",
+		"/C/Users/Hayley/Documents/CS2612018/ans.txt",
+		"/C/Users/Hayley/Documents/CS2612018/phase2.txt",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/inst_none.h",
+		"/C/Users/Hayley/Documents/CS2612018/cache/cache/inst_legible.h",
+		"/C/Users/Hayley/Documents/CS251/Programs/project1/Demo.cpp",
+		"/C/Users/Hayley/Documents/CS2612018/lab12.c",
+		"/C/Users/Hayley/Downloads/CurrentEvent.java",
+		"/C/Users/Hayley/Documents/CS2612018/hchris6-pipe-full.hcl",
+		"/C/Users/Hayley/Documents/CS2612018/hchris6-ncopy.ys",
+		"/C/Users/Hayley/Documents/CS251/Programs/List.h",
+		"/C/Users/Hayley/Documents/CS2612018/seq-full.hcl",
+		"/C/Users/Hayley/Documents/CS2612018/hchris6-copy.ys",
+		"/C/Users/Hayley/Documents/CS2612018/hchris6-sum.ys",
+		"/C/Users/Hayley/Documents/CS2612018/hchris6-rsum.ys",
+		"/C/Users/Hayley/Documents/CS251/Labs/List.h",
+		"/C/Users/Hayley/Documents/CS251/Programs/Demo.cpp",
+		"/C/Users/Hayley/Documents/hchris6_labw2answers.txt",
+		"/C/Users/Hayley/Downloads/gcd_dowhile.cpp",
+		"/C/Users/Hayley/Documents/labw3.c",
+		"/C/Users/Hayley/Documents/hello.c",
+		"/C/Users/Hayley/Documents/KC Code for KC GitHub/Kineticraft-master/Kineticraft-master/src/net/kineticraft/lostcity/commands/Commands.java",
+		"/C/Users/Hayley/Documents/KC Code for KC GitHub/Kineticraft-master/Kineticraft-master/src/net/kineticraft/lostcity/discord/DiscordChannel.java"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
